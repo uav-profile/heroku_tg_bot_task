@@ -74,7 +74,7 @@ def start_message(message):
     tb.send_message(message.chat.id, f'Привет, {message.chat.first_name} {message.chat.last_name} ({message.chat.id}).\nЯ PlaceCourseraBot\n\n\nОбо мне:\nУмею сохранять интересные места\nи отправлять обратно список:) \n\nСписок команд: \n/add\n/list\n/reset')
     db.add_subscriber(message)
 
-@tb.message_handler(commands=['add'], func = lambda message : get_state(message) == START)
+@tb.message_handler(commands=['add'])
 def handle_description(message):
     tb.send_message(message.chat.id, text='Отправьте название места')
     LOC_DICT[message.chat.id]["location"] = None
