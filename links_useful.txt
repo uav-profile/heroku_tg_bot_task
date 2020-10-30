@@ -1,0 +1,2 @@
+https://archakov.im/post/kak-razmestit-telegram-bota-na-servere.html
+https://devcenter.heroku.com/articles/heroku-cli#download-and-install
